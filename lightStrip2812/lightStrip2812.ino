@@ -12,7 +12,7 @@
 #define analogPin 35  // Analog input pin , ours is connected to YL-83
 #define numTouchPins 4    // number of touch pads/pins
 #define numTouchAveraging 4          // moving average filter is this size
-#define touchAvgThreshold 250        // theshold value
+#define touchAvgThreshold 200        // theshold value
 #define timeLedUpdate 600
 
 // global variables
@@ -75,9 +75,9 @@ void loop()   // This will run the cascade from 'ledStartAddress' to 'ledEndAddr
 
 void ledSetPixels()
 {
-  byte colorRed = 60 / brightnessDivIn;
-  byte colorGrn = 60 / brightnessDivIn;
-  byte colorBlu = 60 / brightnessDivIn;
+  byte colorRed = 120 / brightnessDivIn;
+  byte colorGrn = 120 / brightnessDivIn;
+  byte colorBlu = 120/ brightnessDivIn;
 
 
 //  for (byte ledCount=ledStartAddress; ledCount<=ledEndAddress; ledCount++) {
